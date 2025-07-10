@@ -28,9 +28,11 @@ export default function RootLayout({
         <link rel="manifest" href="/site.webmanifest"></link>
       </Head>
       <body
-        className={`${interSans.variable} antialiased`}
+        className={`${interSans.variable} antialiased w-full h-full`}
       >
-        {children}
+        <main className='mx-auto w-full max-w-[1480px] px-4 bg-red-300'>
+          {children}
+        </main>
       </body>
     </html>
   );
