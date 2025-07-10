@@ -1,16 +1,16 @@
 import { NavLink, SectionContent, SectionContentMap, PortfolioItem, SocialLink } from "@/types/types"
 
 export const navLinks: NavLink[] = [
-    { name: 'Home', href: '/', aka: 'Home'},
-    { name: 'Portfolio', href: '/portfolio', aka: 'My Portfolio'},
-    { name: 'About', href: '/about', aka: 'About Us'},
-    { name: 'Contact', href: '/contact', aka: 'Contact Me' }
+    { id: "1", name: 'Home', href: '/', aka: 'Home'},
+    { id: "2", name: 'Portfolio', href: '/portfolio', aka: 'My Portfolio'},
+    { id: "3", name: 'About', href: '/about', aka: 'About Us'},
+    { id: "4", name: 'Contact', href: '/contact', aka: 'Contact Me' }
 ] as const;
 
 export const socialLinks: SocialLink[] = [
-    { name: 'Twitter', href: 'https://www.twitter.com', icon: 'twitter' },
-    { name: 'Instagram', href: 'https://www.instagram.com', icon: 'instagram' },
-    { name: 'LinkedIn', href: 'https://www.linkedin.com', icon: 'linkedin' },
+    { id: "1", name: 'Twitter', href: 'https://www.twitter.com', icon: 'twitter' },
+    { id: "2", name: 'Instagram', href: 'https://www.instagram.com', icon: 'instagram' },
+    { id: "3", name: 'LinkedIn', href: 'https://www.linkedin.com', icon: 'linkedin' },
 ]
 
 export const content: SectionContentMap = {
