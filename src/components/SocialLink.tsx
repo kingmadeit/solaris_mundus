@@ -1,8 +1,20 @@
 import React from 'react'
+import SmartLink from './SmartLink'
 
-const SocialLink = () => {
+type SocialLinkProps = {
+  href: string;
+  icon?: string;
+  label?: string;
+};
+
+
+const SocialLink = ({href, icon, label}: SocialLinkProps) => {
   return (
-    <div>SocialLink</div>
+    <SmartLink href={href} target='_blank' rel='noopener noreferrer' className='social-link'>
+      <span className='icon'>{icon}</span>
+      <span className='label'>{label}</span>
+    </SmartLink>
+
   )
 }
 
