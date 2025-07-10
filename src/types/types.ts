@@ -19,12 +19,14 @@ export type SectionContentMap = {
 }
 
 export type NavLink = {
+    id: string | number;
     name: string;
     href: string;
     aka?: string;
 };
 
 export type SocialLink = {
+    id: string;
     name?: string;
     href: string;
     icon?: string;
