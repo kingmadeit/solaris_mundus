@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import Head from "next/head";
-import { Oswald } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
-const oswaldSans = Oswald({
-  variable: "--font-oswald-sans",
+const interSans = Inter({
+  variable: "--font-inter-sans",
   subsets: ["latin"],
 });
 
@@ -28,7 +28,7 @@ export default function RootLayout({
         <link rel="manifest" href="/site.webmanifest"></link>
       </Head>
       <body
-        className={`${oswaldSans.variable} antialiased`}
+        className={`${interSans.variable} antialiased`}
       >
         {children}
       </body>
