@@ -1,17 +1,19 @@
-export const navLinks = [
+import { navLink, portfolioItem, sectionContent, sectionContentMap, socialLink } from "@/types/types"
+
+export const navLinks: navLink[] = [
     { name: 'Home', href: '/', aka: 'Home'},
     { name: 'Portfolio', href: '/portfolio', aka: 'My Portfolio'},
     { name: 'About', href: '/about', aka: 'About Us'},
     { name: 'Contact', href: '/contact', aka: 'Contact Me' }
-]
+] as const;
 
-export const socialLinks = [
+export const socialLinks: socialLink[] = [
     { name: 'Twitter', href: 'https://www.twitter.com', icon: 'twitter' },
     { name: 'Instagram', href: 'https://www.instagram.com', icon: 'instagram' }
     { name: 'LinkedIn', href: 'https://www.linkedin.com', icon: 'linkedin' },
 ]
 
-export const sectionContent = {
+export const content: sectionContentMap = {
     home: {
         title: 'Why Solar?',
         body: 'Solar energy is becoming increasingly necessary for homeowners in New Jersey for several reasons.',
@@ -38,7 +40,7 @@ export const sectionContent = {
     }
 }
 
-export const portfolioItems = [
+export const portfolioItems: portfolioItem[] = [
     {
         title: 'Project One',
         description: 'Description of project one.',
