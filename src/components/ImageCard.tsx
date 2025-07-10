@@ -11,14 +11,13 @@ type ImageCardProps = {
     className?: string;
 }
 
-export const ImageCard: React.FC<ImageCardProps> = ({
+const ImageCard = ({
     src,
     alt,
     text,
     link,
-
     className
-}) => {
+}: ImageCardProps) => {
   return (
     <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
         <Image 
@@ -32,3 +31,6 @@ export const ImageCard: React.FC<ImageCardProps> = ({
     </div>
   )
 }
+
+
+export default ImageCard;
