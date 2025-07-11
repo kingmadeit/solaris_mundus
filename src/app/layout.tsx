@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Head from "next/head";
 import { Inter } from "next/font/google";
-import { Footer, Header } from "@/components";
+import { Footer, Header, SectionBlock } from "@/components";
+
 import "./globals.css";
 
 const interSans = Inter({
@@ -20,6 +21,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
     <html lang="en">
       <Head>
@@ -33,11 +35,12 @@ export default function RootLayout({
           {/* Header */}
           <section className="top order-1 md:order-none md:row-start-1 md:row-end-2 md:col-start-1">
             <Header />
+            <SectionBlock />
           </section>
 
           {/* Content */}
           <section className="aside order-2 md:order-none md:row-span-2 md:col-start-2 md:h-screen md:overflow-y-auto">
-            <section className="content min-h-screen">
+            <section className="aside__content min-h-screen">
               {children}
             </section>
           </section>

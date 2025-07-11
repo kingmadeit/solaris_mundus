@@ -1,5 +1,4 @@
 import React from 'react'
-
 type SectionBodyProps = {
   children?: React.ReactNode;
 };  
