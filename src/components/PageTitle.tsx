@@ -7,9 +7,9 @@ const PageTitle = () => {
   const pageAlias = navLinks?.find(link => link.href === pathName)?.alias;
 
   if (!pageAlias) return null;
-
+ 
   return (
-    <div className=''>{pageAlias}</div>
+    <h1 className='z-0 absolute uppercase text-[4rem] md:text-[8rem] w-full'>{pageAlias}</h1>
   )
 }
 

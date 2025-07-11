@@ -32,9 +32,9 @@ export default function RootLayout({
       </Head>
       <body className={`${interSans.variable} antialiased w-full h-full`}>
         <PageTitle />
-        <main className="w-full pt-25 max-w-[1480px] flex flex-col md:pt-50 md:grid md:grid-cols-2 md:grid-rows-[auto,1fr,auto] md:h-screen md:gap-8 px-4">
+        <main className="w-full max-w-[1480px] flex flex-col md:grid md:grid-cols-2 md:grid-rows-[auto,1fr,auto] md:h-screen md:gap-8 px-4">
           {/* Header */}
-          <section className="top order-1 md:sticky md:order-none md:row-start-1 md:col-start-1">
+          <section className="top pt-25 md:pt-50 order-1 md:sticky md:order-none md:row-start-1 md:col-start-1">
             <Header />
           </section>
 
@@ -49,7 +49,7 @@ export default function RootLayout({
           </section>
 
           {/* Content */}
-          <section className="aside order-3 md:order-none md:row-span-3 md:col-start-2 md:h-screen md:overflow-y-auto">
+          <section className="aside md:z-1 pt-25 md:pt-50 order-3 md:order-none md:row-span-3 md:col-start-2 md:h-screen md:overflow-y-auto">
             <section className="aside__content min-h-screen">
               {children}
             </section>
