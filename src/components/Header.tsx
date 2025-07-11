@@ -1,8 +1,12 @@
 import React from 'react'
+import { NavBar } from '@/components/index'
+
 
 function Header() {
   return (
-    <div>Header</div>
+    <header>
+      <NavBar />
+    </header>
   )
 }
 

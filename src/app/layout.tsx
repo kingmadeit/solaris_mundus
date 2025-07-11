@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Head from "next/head";
 import { Inter } from "next/font/google";
+import { Footer, Header } from "@/components";
 import "./globals.css";
 
 const interSans = Inter({
@@ -30,8 +31,33 @@ export default function RootLayout({
       <body
         className={`${interSans.variable} antialiased w-full h-full`}
       >
-        <main className='mx-auto w-full max-w-[1480px] px-4 bg-red-300'>
-          {children}
+        {/* <main className='mx-auto grid grid-cols-2 grid-row-1 w-full max-w-[1480px] px-4 bg-red-300'>
+          <section className="top">
+            <Header/>
+          </section>
+          <section className="bottom">
+            <Footer/>
+          </section>
+          <section className="aside">
+            <section className='content min-h-screen'>
+              {children}
+            </section>
+          </section>
+        </main> */}
+        <main className="flex flex-col md:grid md:grid-cols-2 md:h-screen px-4 bg-red-300">
+          <section className="top order-1 md:order-none">
+            <Header />
+          </section>
+
+          <section className="aside order-2 md:order-none md:overflow-y-auto md:h-screen">
+            <section className="content min-h-screen">
+              {children}
+            </section>
+          </section>
+
+          <section className="bottom order-3 md:order-none">
+            <Footer />
+          </section>
         </main>
       </body>
     </html>
