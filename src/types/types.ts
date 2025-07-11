@@ -18,6 +18,7 @@ export type SectionContent = {
 };
 
 export type PortfolioItem = {
+    id: string;
     title: string;
     description?: string;
     image: string;
@@ -30,7 +31,7 @@ export type SectionContentMap = {
 }
 
 export type NavLink = {
-    id: string | number;
+    id: string;
     name: string;
     href: string;
     alias?: string;

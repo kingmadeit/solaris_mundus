@@ -22,7 +22,7 @@ import { NavLink, SectionContent, SectionContentMap, PortfolioItem, TSocialLink 
  * This structure allows for easy mapping and rendering of navigation links in the UI.
  */
 export const navLinks: NavLink[] = [
-    { id: "1", name: 'Home', href: '/', alias: 'Home'},
+    { id: "1", name: 'Home', href: '/', alias: 'lookfolio'},
     { id: "2", name: 'Portfolio', href: '/portfolio', alias: 'My Portfolio'},
     { id: "3", name: 'About', href: '/about', alias: 'About Us'},
     { id: "4", name: 'Contact', href: '/contact', alias: 'Contact Me' }
@@ -76,21 +76,27 @@ export const content: SectionContentMap = {
  */
 export const portfolioItems: PortfolioItem[] = [
     {
-        title: 'Project One',
-        description: 'Description of project one.',
+        id: "1",
+        title: 'Fully subsidized roof replacement',
         image: '/images/project1.jpg',
         link: '/portfolio/project-one'
     },
     {
-        title: 'Project Two',
-        description: 'Description of project two.',
+        id: "2",
+        title: 'Electric panel updates (SMART PANEL/S.P.A.N)',
         image: '/images/project2.jpg',
         link: '/portfolio/project-two'
     },
     {
-        title: 'Project Three',
-        description: 'Description of project three.',
+        id: "3",
+        title: 'Tesla Powerwall 3',
         image: '/images/project3.jpg',
         link: '/portfolio/project-three'
+    },
+    {
+        id: "4",
+        title: 'Tree removal',
+        image: '/images/project4.jpg',
+        link: '/portfolio/project-four'
     }
 ]

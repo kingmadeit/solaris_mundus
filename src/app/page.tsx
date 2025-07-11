@@ -1,9 +1,21 @@
 import Image from "next/image";
+import { portfolioItems } from "@/lib/data";
+import { ImageCard } from "@/components";
+
 
 export default function Home() {
   return (
-    <section className='w-full h-[200vh] flex flex-col items-center justify-center min-h-screen bg-cyan-100'>
-      LANDING PAGE
+    <section className='w-full flex flex-col space-y-8 min-h-screen bg-cyan-100'>
+      {!portfolioItems.length && <p className='text-2xl font-bold text-gray-700'>No portfolio items available.</p> }
+      {portfolioItems && portfolioItems.map(({id, image, title, link}) => (
+        <ImageCard
+          key={id}
+          src={image}
+          alt={title}
+          text={title}
+          link={link}
+          className="mb-8 w-full max-w-md" />
+      ))}
     </section>
   );
 }

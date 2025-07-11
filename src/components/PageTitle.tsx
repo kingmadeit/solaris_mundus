@@ -9,8 +9,15 @@ const PageTitle = () => {
   if (!pageAlias) return null;
  
   return (
-    <h1 className='z-0 absolute uppercase text-[4rem] md:text-[8rem] w-full'>{pageAlias}</h1>
-  )
+    <h1
+      className="z-0 absolute uppercase w-full"
+      style={{
+        fontSize: 'clamp(4rem, 12vw, 12rem)',
+      }}
+    >
+      {pageAlias}
+    </h1>
+  );
 }
 
 export default PageTitle

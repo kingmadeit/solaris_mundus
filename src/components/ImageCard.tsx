@@ -19,7 +19,8 @@ const ImageCard = ({
     className
 }: ImageCardProps) => {
   return (
-    <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+    <section className="w-full flex flex-col space-y-8">
+        <h3 className="capitalized text-lg font-semibold">{text}</h3>
         <Image 
             src={src} 
             alt={alt} 
@@ -27,8 +28,8 @@ const ImageCard = ({
             height={200} 
             className={clsx('rounded-lg shadow-md', className )}>
         </Image>
-        <p className="text-white text-lg font-semibold">{text}</p>
-    </div>
+        
+    </section>
   )
 }
 
