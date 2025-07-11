@@ -50,15 +50,15 @@ export const content: SectionContentMap = {
         cta: 'Learn More',
         image: '/images/home-banner.jpg'
     },
-    portfolio: {
+    about: {
         title: 'Meet Roman Groenland',
         body: 'Explore my recent projects and achievements.',
         cta: 'View Projects',
         image: '/images/portfolio-banner.jpg'
     },
-    about: {
-        title: 'About Us',
-        body: 'Learn more about our mission and values.',
+    portfolio: {
+        title: 'My Portfolio',
+        body: 'Discover the latest projects I have worked on, showcasing my skills and expertise in solar energy solutions.',
         cta: 'Read More',
         image: '/images/about-banner.jpg'
     },
@@ -78,7 +78,7 @@ export const portfolioItems: PortfolioItem[] = [
     {
         id: "1",
         title: 'Fully subsidized roof replacement',
-        image: '/images/project1.jpg',
+        image: 'https://images.thdstatic.com/catalog/productImages/600/9b/9b81b2c0-6f71-415c-91be-7ecf9b0b8aec_600.jpg',
         link: '/portfolio/project-one'
     },
     {
