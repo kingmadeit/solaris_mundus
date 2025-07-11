@@ -1,5 +1,24 @@
+/***
+ * 
+ * This file holds the data for the entire application.
+ * It includes navigation links, social links, section content, and portfolio items.
+ * It is used across various components to render the UI dynamically.
+ * 
+ * If you need to add or modify any data used in the application, this is the file to do it in.
+ * 
+ * * @file src/lib/data.ts
+ * * @module data
+ * * @author kingmadeit (Made with ❤️ by King)
+ */
+
 import { NavLink, SectionContent, SectionContentMap, PortfolioItem, SocialLink } from "@/types/types"
 
+/***
+ * 
+ * Define the navigation links for the application.
+ * Each link has an id, name, href, and aka (also known as).
+ * This structure allows for easy mapping and rendering of navigation links in the UI.
+ */
 export const navLinks: NavLink[] = [
     { id: "1", name: 'Home', href: '/', aka: 'Home'},
     { id: "2", name: 'Portfolio', href: '/portfolio', aka: 'My Portfolio'},
@@ -7,12 +26,21 @@ export const navLinks: NavLink[] = [
     { id: "4", name: 'Contact', href: '/contact', aka: 'Contact Me' }
 ] as const;
 
+/***
+ * 
+ * Define the social links for the application.
+ * Each link has an id, name, href, and icon.
+ * This structure allows for easy mapping and rendering of social links in the UI.
+ */
 export const socialLinks: SocialLink[] = [
     { id: "1", name: 'Twitter', href: 'https://www.twitter.com', icon: 'twitter' },
     { id: "2", name: 'Instagram', href: 'https://www.instagram.com', icon: 'instagram' },
     { id: "3", name: 'LinkedIn', href: 'https://www.linkedin.com', icon: 'linkedin' },
 ]
 
+/***
+ * * This section defines the content for different sections of the application.
+ */
 export const content: SectionContentMap = {
     home: {
         title: 'Why Solar?',
@@ -40,6 +68,10 @@ export const content: SectionContentMap = {
     }
 }
 
+/***
+ * * This section defines the portfolio items to be displayed in the portfolio section.
+ * * Each item has a title, description, image, and link.
+ */
 export const portfolioItems: PortfolioItem[] = [
     {
         title: 'Project One',
