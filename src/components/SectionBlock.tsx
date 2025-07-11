@@ -1,8 +1,7 @@
 'use client';
 import React from 'react';
 import { SectionTitle, SectionBody } from '@/components/index';
-import { content } from '@/lib/data';
-import { usePathname } from 'next/navigation';
+import useSectionData from '@/hooks/useSectionData';
 
 type SectionProps = {
   title: string;
@@ -10,9 +9,7 @@ type SectionProps = {
 };
 
 const SectionBlock = () => {
-    const currentPathname = usePathname() === '/' ? '/home' : usePathname();
-    console.log("Current Pathname:", currentPathname);
-    const data = content[currentPathname.slice(1)];
+    const data = useSectionData();
    
     if (!data) return null;
 

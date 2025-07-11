@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Head from "next/head";
 import { Inter } from "next/font/google";
-import { Footer, Header, SectionBlock } from "@/components";
+import { Footer, Header, PageTitle, SectionBlock } from "@/components";
 
 import "./globals.css";
 
@@ -31,7 +31,8 @@ export default function RootLayout({
         <link rel="manifest" href="/site.webmanifest"></link>
       </Head>
       <body className={`${interSans.variable} antialiased w-full h-full`}>
-        <main className="w-full max-w-[1480px] flex flex-col md:grid md:grid-cols-2 md:grid-rows-[auto,1fr,auto] md:h-screen md:gap-8 px-4">
+        <PageTitle />
+        <main className="w-full pt-25 max-w-[1480px] flex flex-col md:pt-50 md:grid md:grid-cols-2 md:grid-rows-[auto,1fr,auto] md:h-screen md:gap-8 px-4">
           {/* Header */}
           <section className="top order-1 md:sticky md:order-none md:row-start-1 md:col-start-1">
             <Header />

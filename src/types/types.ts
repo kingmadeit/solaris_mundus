@@ -33,7 +33,7 @@ export type NavLink = {
     id: string | number;
     name: string;
     href: string;
-    aka?: string;
+    alias?: string;
 };
 
 
