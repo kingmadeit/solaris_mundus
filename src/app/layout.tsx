@@ -31,23 +31,27 @@ export default function RootLayout({
         <link rel="manifest" href="/site.webmanifest"></link>
       </Head>
       <body className={`${interSans.variable} antialiased w-full h-full`}>
-        <main className="w-full max-w-[1480px] flex flex-col md:grid md:grid-cols-2 md:h-screen md:gap-8 px-4 bg-red-100">
+        <main className="w-full max-w-[1480px] flex flex-col md:grid md:grid-cols-2 md:grid-rows-[auto,1fr,auto] md:h-screen md:gap-8 px-4">
           {/* Header */}
-          <section className="top order-1 md:order-none md:row-start-1 md:row-end-2 md:col-start-1">
+          <section className="top order-1 md:order-none md:row-start-1 md:col-start-1">
             <Header />
+          </section>
+
+          {/* SectionBlock */}
+          <section className="center order-2 md:order-none md:row-start-2 md:col-start-1">
             <SectionBlock />
           </section>
 
+          {/* Footer */}
+          <section className="bottom order-4 md:order-none md:row-start-3 md:col-start-1">
+            <Footer />
+          </section>
+
           {/* Content */}
-          <section className="aside order-2 md:order-none md:row-span-2 md:col-start-2 md:h-screen md:overflow-y-auto">
+          <section className="aside order-3 md:order-none md:row-span-3 md:col-start-2 md:h-screen md:overflow-y-auto">
             <section className="aside__content min-h-screen">
               {children}
             </section>
-          </section>
-
-          {/* Footer */}
-          <section className="bottom order-3 md:order-none md:row-start-2 md:row-end-3 md:col-start-1">
-            <Footer />
           </section>
         </main>
       </body>
