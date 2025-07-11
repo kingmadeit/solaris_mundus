@@ -28,34 +28,22 @@ export default function RootLayout({
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <link rel="manifest" href="/site.webmanifest"></link>
       </Head>
-      <body
-        className={`${interSans.variable} antialiased w-full h-full`}
-      >
-        {/* <main className='mx-auto grid grid-cols-2 grid-row-1 w-full max-w-[1480px] px-4 bg-red-300'>
-          <section className="top">
-            <Header/>
-          </section>
-          <section className="bottom">
-            <Footer/>
-          </section>
-          <section className="aside">
-            <section className='content min-h-screen'>
-              {children}
-            </section>
-          </section>
-        </main> */}
-        <main className="flex flex-col md:grid md:grid-cols-2 md:h-screen px-4 bg-red-300">
-          <section className="top order-1 md:order-none">
+      <body className={`${interSans.variable} antialiased w-full h-full`}>
+        <main className="w-full max-w-[1480px] flex flex-col md:grid md:grid-cols-2 md:h-screen px-4 bg-red-300">
+          {/* Header */}
+          <section className="top order-1 md:order-none md:row-start-1 md:row-end-2 md:col-start-1">
             <Header />
           </section>
 
-          <section className="aside order-2 md:order-none md:overflow-y-auto md:h-screen">
+          {/* Content */}
+          <section className="aside order-2 md:order-none md:row-span-2 md:col-start-2 md:h-screen md:overflow-y-auto">
             <section className="content min-h-screen">
               {children}
             </section>
           </section>
 
-          <section className="bottom order-3 md:order-none">
+          {/* Footer */}
+          <section className="bottom order-3 md:order-none md:row-start-2 md:row-end-3 md:col-start-1">
             <Footer />
           </section>
         </main>
