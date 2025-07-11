@@ -29,7 +29,7 @@ export default function RootLayout({
         <link rel="manifest" href="/site.webmanifest"></link>
       </Head>
       <body className={`${interSans.variable} antialiased w-full h-full`}>
-        <main className="w-full max-w-[1480px] flex flex-col md:grid md:grid-cols-2 md:h-screen px-4 bg-red-300">
+        <main className="w-full max-w-[1480px] flex flex-col md:grid md:grid-cols-2 md:h-screen md:gap-8 px-4 bg-red-100">
           {/* Header */}
           <section className="top order-1 md:order-none md:row-start-1 md:row-end-2 md:col-start-1">
             <Header />

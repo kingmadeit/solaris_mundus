@@ -4,7 +4,7 @@ import { NavBar } from '@/components/index'
 
 function Header() {
   return (
-    <header>
+    <header className='bg-blue-300 w-full flex items-start justify-between'>
       <NavBar />
     </header>
   )

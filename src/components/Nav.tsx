@@ -10,8 +10,8 @@ const NavBar = () => {
 
   // Render the navigation links
   return (
-    <nav aria-label="Main Navigation" className='w-full px-4 outline-1'>
-      <ul>
+    <nav aria-label="Main Navigation" className='w-full bg-green-300'>
+      <ul className='flex items-start justify-between'>
         {navLinks.map((link: NavLink) => (
           <li key={link.id}>
             <Link href={link.href} className='nav-link text-3xl'>
