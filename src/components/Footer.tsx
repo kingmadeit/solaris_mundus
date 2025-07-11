@@ -1,8 +1,10 @@
 import React from 'react'
-
+import { SocialLinks } from '@/components/index'
 const Footer = () => {
   return (
-    <div className='bg-pink-300'>Footer</div>
+    <footer className='w-full flex flex-col h-full bg-pink-300'>
+      <SocialLinks />
+    </footer>
   )
 }
 

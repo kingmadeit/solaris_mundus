@@ -10,7 +10,7 @@ type SocialLinkProps = {
 
 const SocialLink = ({href, icon, label}: SocialLinkProps) => {
   return (
-    <SmartLink href={href} target='_blank' rel='noopener noreferrer' className='social-link'>
+    <SmartLink className='w-full flex justify-between' href={href} target='_blank' rel='noopener noreferrer'>
       <span className='icon'>{icon}</span>
       <span className='label'>{label}</span>
     </SmartLink>

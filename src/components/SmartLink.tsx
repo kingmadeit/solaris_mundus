@@ -16,14 +16,14 @@ const EXTERNAL = ['http', 'https', 'www', '//'];
 const SmartLink = ({href, children, target, rel, className}: SmartLinkProps) => {
 
     const isExternal = EXTERNAL.some(prefix => href.startsWith(prefix));
-
+    console.log(className, 'SmartLink className');
     if (isExternal) {
         return (
             <a 
                 href={href} 
                 target={target || '_blank'} 
                 rel={rel || 'noopener noreferrer'} 
-                className={clsx('', className)}>
+                className={className}>
                 {children}
             </a>
         )
