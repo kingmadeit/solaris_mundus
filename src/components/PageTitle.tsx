@@ -10,7 +10,7 @@ const PageTitle = () => {
  
   return (
     <h1
-      className="z-0 absolute uppercase w-full"
+      className="z-0 absolute top-0 left-0 leading-none uppercase w-full"
       style={{
         fontSize: 'clamp(4rem, 12vw, 12rem)',
       }}
