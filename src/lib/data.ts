@@ -45,8 +45,8 @@ export const socialLinks: TSocialLink[] = [
  */
 export const content: SectionContentMap = {
     home: {
-        title: 'Why Solar?',
-        body: 'Solar energy is becoming increasingly necessary for homeowners in New Jersey for several reasons.',
+        title: 'Luna Energy?',
+        body: 'Ready when you are Linae.',
         cta: 'Learn More',
         image: '/images/home-banner.jpg'
     },
@@ -78,25 +78,25 @@ export const portfolioItems: PortfolioItem[] = [
     {
         id: "1",
         title: 'Fully subsidized roof replacement',
-        image: 'https://images.thdstatic.com/catalog/productImages/600/9b/9b81b2c0-6f71-415c-91be-7ecf9b0b8aec_600.jpg',
+        image: '/images/roof-replacement.jpg',
         link: '/portfolio/project-one'
     },
     {
         id: "2",
         title: 'Electric panel updates (SMART PANEL/S.P.A.N)',
-        image: '/images/project2.jpg',
+        image: '/images/panel-upgrades.jpg',
         link: '/portfolio/project-two'
     },
     {
         id: "3",
         title: 'Tesla Powerwall 3',
-        image: '/images/project3.jpg',
+        image: '/images/powerwall-3.jpg',
         link: '/portfolio/project-three'
     },
     {
         id: "4",
         title: 'Tree removal',
-        image: '/images/project4.jpg',
+        image: '/images/tree-service.jpg',
         link: '/portfolio/project-four'
     }
 ]
