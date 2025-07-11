@@ -8,9 +8,10 @@ import PageTitle from "./PageTitle";
 import SectionTitle from "./SectionTitle";
 import SectionBody from "./SectionBody";
 import SectionBlock from "./SectionBlock";
-
+import SmartLink from "./SmartLink";
 export {
   SocialLink,
+  SmartLink,
   SocialLinks,
   Footer,
   Header,

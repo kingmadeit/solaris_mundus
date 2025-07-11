@@ -12,10 +12,8 @@ const SocialLinks = () => {
       {
         socialLinks?.map((link, index) => (
           <SocialLink
-            key={`${index}-${link.name}`}
-            href={link.href}
-            icon={link.icon}
-            label={link.name}
+            key={link.id || index}
+            link={link}
           />
         ))
       }

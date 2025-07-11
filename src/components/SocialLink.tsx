@@ -1,20 +1,18 @@
 import React from 'react'
-import SmartLink from './SmartLink'
+import {SmartLink} from '@/components/index'
+import { TSocialLink } from '@/types/types';
 
 type SocialLinkProps = {
-  href: string;
-  icon?: string;
-  label?: string;
+  link: TSocialLink 
 };
 
-
-const SocialLink = ({href, icon, label}: SocialLinkProps) => {
+const SocialLink = ({link}: SocialLinkProps) => {
+  const { href, icon: Icon, name } = link;
   return (
     <SmartLink className='w-full flex justify-between' href={href} target='_blank' rel='noopener noreferrer'>
-      <span className='icon'>{icon}</span>
-      <span className='label'>{label}</span>
+      {Icon && <Icon className='w-6 h-6' />}
+      <span className='label'>{name}</span>
     </SmartLink>
-
   )
 }
 

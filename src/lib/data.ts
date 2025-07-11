@@ -1,3 +1,5 @@
+import { IconBrandInstagram, IconBrandLinkedin, IconBrandTwitter } from '@tabler/icons-react';
+
 /***
  * 
  * This file holds the data for the entire application.
@@ -11,7 +13,7 @@
  * * @author kingmadeit (Made with ❤️ by King)
  */
 
-import { NavLink, SectionContent, SectionContentMap, PortfolioItem, SocialLink } from "@/types/types"
+import { NavLink, SectionContent, SectionContentMap, PortfolioItem, TSocialLink } from "@/types/types"
 
 /***
  * 
@@ -32,10 +34,10 @@ export const navLinks: NavLink[] = [
  * Each link has an id, name, href, and icon.
  * This structure allows for easy mapping and rendering of social links in the UI.
  */
-export const socialLinks: SocialLink[] = [
-    { id: "1", name: 'Twitter', href: 'https://www.twitter.com', icon: 'twitter' },
-    { id: "2", name: 'Instagram', href: 'https://www.instagram.com', icon: 'instagram' },
-    { id: "3", name: 'LinkedIn', href: 'https://www.linkedin.com', icon: 'linkedin' },
+export const socialLinks: TSocialLink[] = [
+    { id: "1", name: 'Twitter', href: 'https://www.twitter.com', icon: IconBrandTwitter },
+    { id: "2", name: 'Instagram', href: 'https://www.instagram.com', icon: IconBrandInstagram },
+    { id: "3", name: 'LinkedIn', href: 'https://www.linkedin.com', icon: IconBrandLinkedin },
 ]
 
 /***
