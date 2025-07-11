@@ -5,6 +5,9 @@ import Header from "./Header";
 import NavBar from "./Nav";
 import ImageCard from "./ImageCard";
 import PageTitle from "./PageTitle";
+import SectionTitle from "./SectionTitle";
+import SectionBody from "./SectionBody";
+import SectionBlock from "./SectionBlock";
 
 export {
   SocialLink,
@@ -13,6 +16,9 @@ export {
   Header,
   NavBar,
   ImageCard,
-  PageTitle
+  PageTitle,
+  SectionTitle,
+  SectionBody,
+  SectionBlock
 };
 
