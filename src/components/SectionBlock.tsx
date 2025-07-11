@@ -17,7 +17,7 @@ const SectionBlock = () => {
     if (!data) return null;
 
     return (
-        <section className="w-full flex flex-col items-center justify-start">
+        <section className="w-full flex flex-col justify-start">
             <SectionTitle title={data.title} />
             <SectionBody>{data.body}</SectionBody>
         </section>
