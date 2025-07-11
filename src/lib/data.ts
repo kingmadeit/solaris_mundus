@@ -45,8 +45,8 @@ export const socialLinks: TSocialLink[] = [
  */
 export const content: SectionContentMap = {
     home: {
-        title: 'Luna Energy?',
-        body: 'Ready when you are Linae.',
+        title: 'Why Solar?',
+        body: 'Solar energy is becoming increasingly necessary for homeowners in New Jersey for several reasons.',
         cta: 'Learn More',
         image: '/images/home-banner.jpg'
     },

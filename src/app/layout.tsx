@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Head from "next/head";
-import { Inter } from "next/font/google";
+import { Inter, Antonio } from "next/font/google";
 import { Footer, Header, PageTitle, SectionBlock } from "@/components";
 
 import "./globals.css";
@@ -10,6 +10,10 @@ const interSans = Inter({
   subsets: ["latin"],
 });
 
+const antonio = Antonio({
+  variable: "--font-antonio",
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Solaris Mundus",
@@ -30,7 +34,7 @@ export default function RootLayout({
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <link rel="manifest" href="/site.webmanifest"></link>
       </Head>
-      <body className={`${interSans.variable} antialiased w-full h-full`}>
+      <body className={`${interSans.variable} ${antonio.variable} antialiased w-full h-full`}>
         <PageTitle />
         <main className="w-full max-w-[1480px] flex flex-col md:grid md:grid-cols-2 md:grid-rows-[auto,1fr,auto] md:h-screen md:gap-8 px-4">
           {/* Header */}
