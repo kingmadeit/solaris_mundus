@@ -48,25 +48,25 @@ export const content: SectionContentMap = {
         title: 'Why Solar?',
         body: 'Solar energy is becoming increasingly necessary for homeowners in New Jersey for several reasons.',
         cta: 'Learn More',
-        image: '/images/home-banner.jpg'
+        image: '/images/home-banner.png'
     },
     about: {
         title: 'Meet Roman Groenland',
         body: 'Explore my recent projects and achievements.',
         cta: 'View Projects',
-        image: '/images/portfolio-banner.jpg'
+        image: '/images/portfolio-banner.png'
     },
     portfolio: {
         title: 'My Portfolio',
         body: 'Discover the latest projects I have worked on, showcasing my skills and expertise in solar energy solutions.',
         cta: 'Read More',
-        image: '/images/about-banner.jpg'
+        image: '/images/about-banner.png'
     },
     contact: {
         title: 'Get in Touch',
         body: 'We would love to hear from you. Reach out to us today!',
         cta: 'Contact Us',
-        image: '/images/contact-banner.jpg'
+        image: '/images/contact-banner.png'
     }
 }
 
@@ -78,25 +78,25 @@ export const portfolioItems: PortfolioItem[] = [
     {
         id: "1",
         title: 'Fully subsidized roof replacement',
-        image: '/images/roof-replacement.jpg',
+        image: '/images/roof-replacement.png',
         link: '/portfolio/project-one'
     },
     {
         id: "2",
         title: 'Electric panel updates (SMART PANEL/S.P.A.N)',
-        image: '/images/panel-upgrades.jpg',
+        image: '/images/panel-upgrades.png',
         link: '/portfolio/project-two'
     },
     {
         id: "3",
         title: 'Tesla Powerwall 3',
-        image: '/images/powerwall-3.jpg',
+        image: '/images/powerwall-3.png',
         link: '/portfolio/project-three'
     },
     {
         id: "4",
         title: 'Tree removal',
-        image: '/images/tree-service.jpg',
+        image: '/images/tree-service.png',
         link: '/portfolio/project-four'
     }
 ]
