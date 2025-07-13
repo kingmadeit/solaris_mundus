@@ -5,7 +5,7 @@ type SectionTitleProps = {
 };
 
 const SectionTitle = ({ title }: SectionTitleProps) => (
-  <h1 className="font-antonio font-bold text-[clamp(2rem,10vw,4rem)]">
+  <h1 className="font-antonio font-bold text-[clamp(2rem,10vw,3.5rem)]">
     {title}
   </h1>
 )

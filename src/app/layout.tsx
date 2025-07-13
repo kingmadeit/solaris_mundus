@@ -36,7 +36,7 @@ export default function RootLayout({
       </Head>
       <body className={`${interSans.variable} ${antonio.variable} justify-center flex antialiased w-full h-full`}>
         <PageTitle />
-        <main className="w-full max-w-[1480px] flex flex-col md:grid md:grid-cols-2 md:grid-rows-[auto,1fr,auto] md:h-screen md:gap-8 px-4 md:px-8">
+        <main className="w-full max-w-[1480px] flex flex-col md:grid md:grid-cols-2 md:grid-rows-[auto,1fr,auto] md:h-screen md:gap-8 px-4 md:px-6">
           {/* Header */}
           <section className="top pt-25 md:pt-50 order-1 md:sticky md:order-none md:row-start-1 md:col-start-1">
             <Header />
