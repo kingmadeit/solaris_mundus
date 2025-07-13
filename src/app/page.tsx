@@ -4,5 +4,5 @@ import Image from "next/image";
 
 
 export default function Home() {
-  return  <PortfolioShowcase />
+  return  <PortfolioShowcase className="flex-col"/>
 }
