@@ -28,18 +28,19 @@ body {
   width: 100%;
   font-family: var(--font-antonio);
   font-weight: 700;
-  font-size: clamp(12rem, 25vw, 30rem);
+  font-size: clamp(28rem, 25vw, 50rem);
   letter-spacing: -0.05em;
-  line-height: 0.9;
+  line-height: 0.66;
   text-transform: uppercase;
   white-space: nowrap;
   display: inline-block;
 
-  background: linear-gradient(0deg, rgba(128, 128, 128, 0) 20.4%, rgba(128, 128, 128, 0.5) 149.5%);
+  background: linear-gradient(0deg, rgba(128, 128, 128, 0) 15.4%, rgba(128, 128, 128, 0.5) 149.5%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
   pointer-events: none;
   user-select: none;
+  text-indent: -3rem;
 }

@@ -3,7 +3,7 @@ import React from 'react';
 import { navLinks } from '@/lib/data';
 import { usePathname } from 'next/navigation';
 
-const PageTitle = () => {
+const PageHeading = () => {
   const pathName = usePathname();
   const pageAlias = navLinks?.find(link => link.href === pathName)?.alias;
 
@@ -16,4 +16,4 @@ const PageTitle = () => {
   );
 };
 
-export default PageTitle;
+export default PageHeading;
