@@ -8,7 +8,7 @@ const SocialLinks = () => {
   
   // Render social links if available
   return (
-    <section className='w-full flex flex-col items-center justify-center bg-gray-200 p-4'>
+    <section className='w-full flex flex-col items-center justify-center p-4'>
       {
         socialLinks?.map((link, index) => (
           <SocialLink

@@ -17,7 +17,7 @@ const SectionBlock = () => {
     return (
         <section className="w-full flex flex-col space-y-8 justify-start">
             <SectionTitle title={data.title} />
-            <SectionBody className={pathName === '/' ? 'font-antonio' : ''}>{data.body}</SectionBody>
+            <SectionBody className={pathName === '/' ? 'font-antonio text-[clamp(1rem,2vw,1.5rem)]' : 'text-[clamp(.5rem,2vw,1rem)] text-gray-500'}>{data.body}</SectionBody>
         </section>
     )
 };

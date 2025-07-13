@@ -34,7 +34,7 @@ export default function RootLayout({
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <link rel="manifest" href="/site.webmanifest"></link>
       </Head>
-      <body className={`${interSans.variable} ${antonio.variable} antialiased w-full h-full`}>
+      <body className={`${interSans.variable} ${antonio.variable} justify-center flex antialiased w-full h-full`}>
         <PageTitle />
         <main className="w-full max-w-[1480px] flex flex-col md:grid md:grid-cols-2 md:grid-rows-[auto,1fr,auto] md:h-screen md:gap-8 px-4">
           {/* Header */}

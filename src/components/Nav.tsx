@@ -10,11 +10,11 @@ const NavBar = () => {
 
   // Render the navigation links
   return (
-    <nav aria-label="Main Navigation" className='w-full bg-green-300'>
+    <nav aria-label="Main Navigation" className='w-full'>
       <ul className='flex items-start justify-between'>
         {navLinks.map((link: NavLink) => (
           <li key={link.id}>
-            <Link href={link.href} className='nav-link text-3xl'>
+            <Link href={link.href} className='text-[clamp(0.5rem,2vw,1rem)] text-gray-500 nav-link'>
               {link.name}
             </Link> 
           </li>

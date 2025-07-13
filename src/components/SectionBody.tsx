@@ -4,6 +4,6 @@ type SectionBodyProps = {
   className?: string;
 };  
 
-const SectionBody = ({children, className}:SectionBodyProps) =>  <p className={className}>{children}</p>
+const SectionBody = ({children, className}:SectionBodyProps) =>  <p className={`${className}`}>{children}</p>
 
 export default SectionBody

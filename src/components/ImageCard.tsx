@@ -20,13 +20,13 @@ const ImageCard = ({
 }: ImageCardProps) => {
   return (
     <section className="w-full flex flex-col space-y-8">
-        <h3 className="capitalized text-lg font-semibold">{text}</h3>
+        <h3 className="capitalize text-[clamp(1rem,2vw,2rem)] font-antonio font-semibold">{text}</h3>
         <Image 
             src={src} 
             alt={alt} 
             width={300} 
             height={200} 
-            className={clsx('rounded-lg shadow-md', className )}>
+            className={clsx('', className )}>
         </Image>
         
     </section>
