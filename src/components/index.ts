@@ -4,13 +4,12 @@ import Footer from "./Footer";
 import Header from "./Header";
 import NavBar from "./Nav";
 import ImageCard from "./ImageCard";
-import PageTitle from "./PageHeading";
+import PageHeading from "./PageHeading";
 import SectionTitle from "./SectionTitle";
 import SectionBody from "./SectionBody";
 import SectionBlock from "./SectionBlock";
 import SmartLink from "./SmartLink";
 import PortfolioShowcase from "./PortfolioShowcase";
-
 export {
   PortfolioShowcase,
   SocialLink,
@@ -20,7 +19,7 @@ export {
   Header,
   NavBar,
   ImageCard,
-  PageTitle,
+  PageHeading,
   SectionTitle,
   SectionBody,
   SectionBlock

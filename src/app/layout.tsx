@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import Head from "next/head";
 import { Inter, Antonio } from "next/font/google";
-import { Footer, Header, PageTitle, SectionBlock } from "@/components";
-
+import { Footer, Header, PageHeading, SectionBlock } from "@/components";
 import "./globals.css";
 
 const interSans = Inter({
@@ -35,7 +34,7 @@ export default function RootLayout({
         <link rel="manifest" href="/site.webmanifest"></link>
       </Head>
       <body className={`${interSans.variable} ${antonio.variable} bg-white justify-center flex antialiased w-full h-full`}>
-        <PageTitle />
+        <PageHeading />
         <main className="z-1 w-full max-w-[1480px] flex flex-col md:grid md:grid-cols-2 md:grid-rows-[auto,1fr,auto] md:h-screen md:gap-8 px-4 md:px-6">
           {/* Header */}
           <section className="top pt-50 order-1 md:sticky md:order-none md:row-start-1 md:col-start-1">
@@ -53,7 +52,7 @@ export default function RootLayout({
           </section>
 
           {/* Content */}
-          <section className="aside md:z-1 pt-20 md:pt-47 order-3 md:order-none md:row-span-3 md:col-start-2 md:h-screen md:overflow-y-auto">
+          <section className="aside md:z-1 pt-20 md:pt-46 order-3 md:order-none md:row-span-3 md:col-start-2 md:h-screen md:overflow-y-auto">
             <section className="aside__content min-h-screen">
               {children}
             </section>
