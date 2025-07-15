@@ -2,10 +2,11 @@ import React from 'react'
 
 type SectionTitleProps = {
   title: string;
+  className?: string;
 };
 
-const SectionTitle = ({ title }: SectionTitleProps) => (
-  <h1 className="font-antonio tracking-tight font-extrabold text-[clamp(3rem,10vw,3.5rem)]">
+const SectionTitle = ({ title, className }: SectionTitleProps) => (
+  <h1 className={className ? className : 'text-2xl font-bold'}>
     {title}
   </h1>
 )
