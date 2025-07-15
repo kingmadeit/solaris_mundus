@@ -4,7 +4,7 @@ import { fadeInLeftAnimation } from '@/lib/constants';
 import { usePageAlias } from '@/hooks';
 
 type PageContentProps = {
-  children: ;
+  children: React.ReactNode;
 };
 
 const PageContent = ({children}: PageContentProps) => {
