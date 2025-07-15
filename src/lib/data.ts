@@ -51,7 +51,7 @@ export const content: SectionContentMap = {
         image: '/images/home-banner.png'
     },
     about: {
-        title: 'Meet Roman Groenland',
+        title: 'Meet Stanis Jehu',
         body: 'Explore my recent projects and achievements.',
         cta: 'View Projects',
         image: '/images/portfolio-banner.png'
