@@ -20,7 +20,7 @@ const ImageCard = ({
 }: ImageCardProps) => {
   return (
     <section className="w-full flex flex-col space-y-8">
-        <h3 className="capitalize text-[clamp(1.5rem,2vw,2rem)] font-antonio font-bold">{text}</h3>
+        <h3 className="capitalize text-[clamp(1.2rem,2vw,1.5rem)] font-antonio font-bold">{text}</h3>
         <div className={clsx('relative w-full aspect-[3/2]', className)}>
             <Image
           src={src}

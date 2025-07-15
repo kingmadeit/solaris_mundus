@@ -2,6 +2,8 @@
 import React from 'react';
 import { navLinks } from '@/lib/data';
 import { usePathname } from 'next/navigation';
+import { motion } from 'framer-motion';
+
 
 const PageHeading = () => {
   const pathName = usePathname();
@@ -10,9 +12,15 @@ const PageHeading = () => {
   if (!pageAlias) return null;
 
   return (
-    <h1 className="font-antonio page-heading">
-        <span>{pageAlias}</span>
-    </h1>
+    <motion.h1
+      key={pageAlias} // Use key to re-render when alias changes
+      initial={{ opacity: 0, y: -50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      className="font-antonio page-heading"
+    >
+      <span>{pageAlias}</span>
+    </motion.h1>
   );
 };
 

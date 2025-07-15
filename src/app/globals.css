@@ -28,14 +28,13 @@ body {
   width: 100%;
   font-family: var(--font-antonio);
   font-weight: 700;
-  font-size: clamp(15rem, 25vw, 50rem);
+  font-size: clamp(15rem, 31vw, 50rem);
   letter-spacing: -0.05em;
   line-height: 0.66;
   text-transform: uppercase;
   white-space: nowrap;
   display: inline-block;
-
-
+  text-indent: -3rem;
 }
 
 .page-heading span {
