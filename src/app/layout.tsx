@@ -4,6 +4,7 @@ import { Inter, Antonio } from "next/font/google";
 import { Footer, Header, PageContent, PageHeading, SectionBlock } from "@/components";
 import "./globals.css";
 
+
 const interSans = Inter({
   variable: "--font-inter-sans",
   subsets: ["latin"],
@@ -52,7 +53,7 @@ export default function RootLayout({
           </section>
 
           {/* Content */}
-          <PageContent>
+          <PageContent clasName="aside md:z-1 pt-20 md:pt-46 order-3 md:order-none md:row-span-3 md:col-start-2 md:h-screen md:overflow-y-auto">
             {children}  
           </PageContent>
         </main>

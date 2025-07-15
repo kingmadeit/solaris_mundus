@@ -4,7 +4,7 @@ import { usePathname } from 'next/navigation';
 import { SectionTitle, SectionBody } from '@/components/index';
 import { useSectionData } from '@/hooks';
 import * as motion from 'motion/react-client';
-import { defaultLeftVal, fadeInRightAnimation } from '@/lib/constants';
+import { DEFAULT_LEFT_VAL, fadeInRightAnimation } from '@/lib/constants';
 
 type SectionProps = {
   title: string;
@@ -27,7 +27,7 @@ const SectionBlock = () => {
             </motion.div>
              <motion.div
                 {...fadeInRightAnimation}
-                initial={{ opacity: 0, x: (defaultLeftVal * 2) }}
+                initial={{ opacity: 0, x: (DEFAULT_LEFT_VAL * 2) }}
                 key={pathName}
                 className="w-full"
             >
