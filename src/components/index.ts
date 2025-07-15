@@ -10,7 +10,11 @@ import SectionBody from "./SectionBody";
 import SectionBlock from "./SectionBlock";
 import SmartLink from "./SmartLink";
 import PortfolioShowcase from "./PortfolioShowcase";
+import PageContent from "./PageContent";
+
+
 export {
+  PageContent,
   PortfolioShowcase,
   SocialLink,
   SmartLink,

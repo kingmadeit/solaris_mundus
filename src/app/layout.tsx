@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Head from "next/head";
 import { Inter, Antonio } from "next/font/google";
-import { Footer, Header, PageHeading, SectionBlock } from "@/components";
+import { Footer, Header, PageContent, PageHeading, SectionBlock } from "@/components";
 import "./globals.css";
 
 const interSans = Inter({
@@ -52,11 +52,9 @@ export default function RootLayout({
           </section>
 
           {/* Content */}
-          <section className="aside md:z-1 pt-20 md:pt-46 order-3 md:order-none md:row-span-3 md:col-start-2 md:h-screen md:overflow-y-auto">
-            <section className="aside__content min-h-screen">
-              {children}
-            </section>
-          </section>
+          <PageContent>
+            {children}  
+          </PageContent>
         </main>
       </body>
     </html>
