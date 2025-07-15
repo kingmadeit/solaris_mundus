@@ -11,7 +11,7 @@ const PageHeading = () => {
 
   return (
     <h1 className="font-antonio page-heading">
-        {pageAlias}
+        <span>{pageAlias}</span>
     </h1>
   );
 };

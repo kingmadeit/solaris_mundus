@@ -17,7 +17,7 @@ const PortfolioShowcase = ({className}: PortfolioShowcaseProps) => {
             alt={title}
             text={title}
             link={link}
-            className="mb-8 w-full max-w-md" />
+            className="w-full max-w-xl" />
         ))}
 
     </section>

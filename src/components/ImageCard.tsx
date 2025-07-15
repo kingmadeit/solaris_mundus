@@ -20,14 +20,16 @@ const ImageCard = ({
 }: ImageCardProps) => {
   return (
     <section className="w-full flex flex-col space-y-8">
-        <h3 className="capitalize text-[clamp(1rem,2vw,2rem)] font-antonio font-semibold">{text}</h3>
-        <Image 
-            src={src} 
-            alt={alt} 
-            width={300} 
-            height={200} 
-            className={clsx('', className )}>
-        </Image>
+        <h3 className="capitalize text-[clamp(1.5rem,2vw,2rem)] font-antonio font-bold">{text}</h3>
+        <div className={clsx('relative w-full aspect-[3/2]', className)}>
+            <Image
+          src={src}
+          alt={alt}
+          fill
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+          className="object-cover rounded"
+            />
+        </div>
         
     </section>
   )
