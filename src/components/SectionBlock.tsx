@@ -2,7 +2,7 @@
 import React from 'react';
 import { usePathname } from 'next/navigation';
 import { SectionTitle, SectionBody } from '@/components/index';
-import useSectionData from '@/hooks/useSectionData';
+import { useSectionData } from '@/hooks';
 import * as motion from 'motion/react-client';
 import { fadeInRightAnimation } from '@/lib/constants';
 

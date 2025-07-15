@@ -1,14 +1,11 @@
 'use client';
 import React from 'react';
-import { navLinks } from '@/lib/data';
-import { usePathname } from 'next/navigation';
 import { motion } from 'framer-motion';
+import {usePageAlias} from '@/hooks';
 
 
 const PageHeading = () => {
-  const pathName = usePathname();
-  const pageAlias = navLinks?.find(link => link.href === pathName)?.alias;
-
+  const pageAlias = usePageAlias();
   if (!pageAlias) return null;
 
   return (
