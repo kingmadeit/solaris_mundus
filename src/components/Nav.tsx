@@ -9,10 +9,11 @@ import { usePathname } from 'next/navigation';
 import clsx from 'clsx';
 
 const NavBar = () => {
+  const pathname = usePathname();
+
   // Check if navLinks is defined and has items
   if (!navLinks || navLinks.length === 0) return null;
 
-  const pathname = usePathname();
   // Render the navigation links
   return (
     <nav aria-label="Main Navigation" className='w-full'>
