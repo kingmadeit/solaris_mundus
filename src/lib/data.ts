@@ -13,7 +13,7 @@ import { IconBrandInstagram, IconBrandLinkedin, IconBrandTwitter } from '@tabler
  * * @author kingmadeit (Made with ❤️ by King)
  */
 
-import { NavLink, SectionContent, SectionContentMap, PortfolioItem, TSocialLink } from "@/types/types"
+import { NavLink, SectionContentMap, PortfolioItem, TSocialLink } from "@/types/types"
 
 /***
  * 
