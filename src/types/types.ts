@@ -10,13 +10,6 @@
 
 import { IconBrandTwitter } from '@tabler/icons-react';
 
-export type SectionContent = {
-    title: string;
-    body: string;
-    cta?: string;
-    image?: string;
-};
-
 export type PortfolioItem = {
     id: string;
     title: string;

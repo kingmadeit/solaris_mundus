@@ -6,10 +6,6 @@ import { useSectionData } from '@/hooks';
 import * as motion from 'motion/react-client';
 import { DEFAULT_LEFT_VAL, fadeInRightAnimation } from '@/lib/constants';
 
-type SectionProps = {
-  title: string;
-  children: React.ReactNode;
-};
 
 const SectionBlock = () => {
     const data = useSectionData();
