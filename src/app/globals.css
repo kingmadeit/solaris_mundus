@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+.font-antonio {
+  font-family: var(--font-antonio);
+}
+
+.page-heading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-family: var(--font-antonio);
+  font-weight: 700;
+  font-size: clamp(15rem, 31vw, 50rem);
+  letter-spacing: -0.05em;
+  line-height: 0.66;
+  text-transform: uppercase;
+  white-space: nowrap;
+  display: inline-block;
+  text-indent: -3rem;
+}
+
+.page-heading span {
+  background: linear-gradient(0deg, rgba(128, 128, 128, 0) 15.4%, rgba(128, 128, 128, 0.5) 149.5%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  pointer-events: none;
+  user-select: none;
+  text-indent: -3rem;
+  z-index: 0
+}
+
+.link-lightning::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 0%;
+  background-color: black;
+  opacity: 1;
+  transition: width 0.2s ease-out, opacity 0.2s ease-in;
+}
+
+.link-lightning:hover::after {
+  width: 100%;
+  opacity: 0.05;
+}
