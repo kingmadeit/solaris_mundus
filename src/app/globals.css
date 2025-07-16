@@ -48,3 +48,20 @@ body {
   text-indent: -3rem;
   z-index: 0
 }
+
+.link-lightning::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 0%;
+  background-color: black;
+  opacity: 1;
+  transition: width 0.2s ease-out, opacity 0.2s ease-in;
+}
+
+.link-lightning:hover::after {
+  width: 100%;
+  opacity: 0.05;
+}
