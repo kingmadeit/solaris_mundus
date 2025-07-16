@@ -11,7 +11,7 @@ import SectionBlock from "./SectionBlock";
 import SmartLink from "./SmartLink";
 import PortfolioShowcase from "./PortfolioShowcase";
 import PageContent from "./PageContent";
-
+import Copyright from "./Copyright";
 
 export {
   PageContent,
@@ -26,6 +26,7 @@ export {
   PageHeading,
   SectionTitle,
   SectionBody,
-  SectionBlock
+  SectionBlock,
+  Copyright
 };
 
