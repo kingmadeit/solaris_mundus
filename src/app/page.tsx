@@ -1,6 +1,6 @@
 import { PortfolioShowcase, SmartLink } from "@/components";
 import * as motion from 'motion/react-client';
-import { fadeInLeftAnimation, PAGE_CONTENT_PT } from "@/lib/constants";
+import { fadeInLeftAnimation } from "@/lib/constants";
 import { portfolioItems } from "@/lib/data";
 
 

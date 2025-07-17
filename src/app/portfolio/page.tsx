@@ -1,5 +1,5 @@
 import { PortfolioShowcase } from "@/components";
-import { fadeInUpAnimation, PAGE_CONTENT_PT } from "@/lib/constants";
+import { fadeInUpAnimation } from "@/lib/constants";
 import { portfolioItems } from "@/lib/data";
 import * as motion from 'motion/react-client';
 
