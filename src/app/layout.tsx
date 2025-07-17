@@ -43,7 +43,7 @@ export default function RootLayout({
           </section>
 
           {/* SectionBlock */}
-          <section className="pt-16 md:pt-none center order-2 md:sticky md:order-none md:row-start-2 md:col-start-1">
+          <section className="pt-16 md:pt-0 center order-2 md:sticky md:order-none md:row-start-2 md:col-start-1">
             <SectionBlock />
           </section>
 
@@ -53,7 +53,7 @@ export default function RootLayout({
           </section>
 
           {/* Content */}
-          <PageContent clasName="aside md:z-1 pt-20 md:pt-46 order-3 md:order-none md:row-span-3 md:col-start-2 md:h-screen md:overflow-y-auto">
+          <PageContent clasName="aside md:z-1 order-3 md:order-none md:row-span-3 md:col-start-2 md:h-screen md:overflow-y-auto">
             {children}  
           </PageContent>
         </main>
