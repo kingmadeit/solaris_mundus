@@ -1,5 +1,12 @@
 import { PortfolioShowcase } from "@/components";
+import { fadeInUpAnimation } from "@/lib/constants";
+import { portfolioItems } from "@/lib/data";
+import * as motion from 'motion/react-client';
 
 export default function PortfolioPage() {
-    return <PortfolioShowcase className="flex-col"/>;
+    return (
+        <motion.div className={`min-h-screen md:absolute md:top-47`} {...fadeInUpAnimation}>
+            <PortfolioShowcase items={portfolioItems} className="flex-col"/>
+        </motion.div>
+    )
 }

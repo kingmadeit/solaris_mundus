@@ -23,7 +23,7 @@ const NavBar = () => {
         {navLinks.map((link: NavLink) => (
           <li key={link.id}>
             <Link href={link.href} className={clsx(
-              'text-[clamp(1rem,2vw,1rem)] relative hover:text-black transition link-lightning',
+              'after-bottom-neg-8 text-[clamp(1rem,2vw,1rem)] relative hover:text-black transition link-lightning',
               pathname === link.href ? 'text-black' : 'text-gray-500'
             )}>
               {link.name}

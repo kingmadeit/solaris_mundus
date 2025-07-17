@@ -13,7 +13,7 @@ const SectionBlock = () => {
     if (!data) return null;
 
     return (
-        <section className="w-full flex flex-col space-y-8 justify-start">
+        <section className="w-full flex flex-col space-y-8 justify-start mb-8 md:mb-0">
             <motion.div
                 {...fadeInRightAnimation}
                 key={data.title}

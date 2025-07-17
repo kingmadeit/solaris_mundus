@@ -1,5 +1,7 @@
 import React from 'react'
 import Link from 'next/link';
+import { IconArrowRight } from '@tabler/icons-react';
+import clsx from 'clsx';
 
 type SmartLinkProps = {
     href: string;
@@ -11,6 +13,7 @@ type SmartLinkProps = {
 
 
 const EXTERNAL = ['http', 'https', 'www', '//'];
+const componentClass = "smart-link after-bottom-0 relative link-lightning flex justify-between";
 
 const SmartLink = ({href, children, target, rel, className}: SmartLinkProps) => {
 
@@ -22,15 +25,17 @@ const SmartLink = ({href, children, target, rel, className}: SmartLinkProps) => 
                 href={href} 
                 target={target || '_blank'} 
                 rel={rel || 'noopener noreferrer'} 
-                className={className}>
+                className={clsx(componentClass, className)}>
                 {children}
+                <IconArrowRight className='w-4 h-4'/>
             </a>
         )
     }
 
     return (
-        <Link href={href} className={className}>
+        <Link href={href} className={clsx(className, componentClass)}>
             {children}
+            <IconArrowRight className='w-4 h-4'/>
         </Link>
     )
 }
