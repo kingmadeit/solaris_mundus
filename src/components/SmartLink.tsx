@@ -13,6 +13,7 @@ type SmartLinkProps = {
 
 
 const EXTERNAL = ['http', 'https', 'www', '//'];
+const componentClass = "smart-link after-bottom-0 relative link-lightning flex justify-between";
 
 const SmartLink = ({href, children, target, rel, className}: SmartLinkProps) => {
 
@@ -24,7 +25,7 @@ const SmartLink = ({href, children, target, rel, className}: SmartLinkProps) => 
                 href={href} 
                 target={target || '_blank'} 
                 rel={rel || 'noopener noreferrer'} 
-                className={clsx(className, 'flex justify-between')}>
+                className={clsx(componentClass, className)}>
                 {children}
                 <IconArrowRight className='w-4 h-4'/>
             </a>
@@ -32,7 +33,7 @@ const SmartLink = ({href, children, target, rel, className}: SmartLinkProps) => 
     }
 
     return (
-        <Link href={href} className={clsx(className, 'flex justify-between text-gray-500')}>
+        <Link href={href} className={clsx(className, componentClass)}>
             {children}
             <IconArrowRight className='w-4 h-4'/>
         </Link>
