@@ -3,7 +3,7 @@ export const DEFAULT_LEFT_VAL = -50;
 export const LAYOUT_PT_SM = 20;
 export const LAYOUT_PT_MD = 46;
 export const SPACING = 0.25;
-export const PAGE_CONTENT_PT = `pt-${LAYOUT_PT_SM} md:pt-${LAYOUT_PT_MD}`;
+export const PAGE_CONTENT_PT = `mt-${LAYOUT_PT_SM} md:mt-${LAYOUT_PT_MD}`;
 export const FIXED_ASIDE = `mt-10 mb-8 md:mt-0 md:mb-0 w-full h-64 md:h-screen relative overflow-hidden`;
 
 

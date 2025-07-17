@@ -1,5 +1,7 @@
 import React from 'react'
 import Link from 'next/link';
+import { IconArrowRight } from '@tabler/icons-react';
+import clsx from 'clsx';
 
 type SmartLinkProps = {
     href: string;
@@ -22,15 +24,17 @@ const SmartLink = ({href, children, target, rel, className}: SmartLinkProps) => 
                 href={href} 
                 target={target || '_blank'} 
                 rel={rel || 'noopener noreferrer'} 
-                className={className}>
+                className={clsx(className, 'flex justify-between')}>
                 {children}
+                <IconArrowRight className='w-4 h-4'/>
             </a>
         )
     }
 
     return (
-        <Link href={href} className={className}>
+        <Link href={href} className={clsx(className, 'flex justify-between text-gray-500')}>
             {children}
+            <IconArrowRight className='w-4 h-4'/>
         </Link>
     )
 }

@@ -1,7 +1,6 @@
 import React from 'react'
 import {SmartLink} from '@/components/index'
 import { TSocialLink } from '@/types/types';
-import {IconArrowRight} from '@tabler/icons-react';
 
 type SocialLinkProps = {
   link: TSocialLink 
@@ -15,7 +14,6 @@ const SocialLink = ({link}: SocialLinkProps) => {
         {Icon && <Icon className='w-5 h-5' />}
         <span className='label'>{name}</span>
       </div>
-      <IconArrowRight className='w-4 h-4'/>
     </SmartLink>
   )
 }
