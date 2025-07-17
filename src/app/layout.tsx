@@ -53,7 +53,7 @@ export default function RootLayout({
           </section>
 
           {/* Content */}
-          <PageContent clasName="aside md:z-1 order-3 md:order-none md:row-span-3 md:col-start-2 md:h-screen md:overflow-y-auto">
+          <PageContent clasName="aside md:relative md:z-1 order-3 md:order-none md:row-span-3 md:col-start-2 md:h-screen md:overflow-y-auto">
             {children}  
           </PageContent>
         </main>
