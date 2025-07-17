@@ -1,11 +1,11 @@
 import { PortfolioShowcase } from "@/components";
 import * as motion from 'motion/react-client';
-import { fadeInLeftAnimation } from "@/lib/constants";
+import { fadeInLeftAnimation, PAGE_CONTENT_PT } from "@/lib/constants";
 
 
 export default function Home() {
   return  (
-    <motion.div {...fadeInLeftAnimation}>
+    <motion.div {...fadeInLeftAnimation} className={PAGE_CONTENT_PT}>
       <PortfolioShowcase className="flex-col"/>
     </motion.div>
 
