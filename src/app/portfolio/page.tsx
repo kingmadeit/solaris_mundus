@@ -1,7 +1,13 @@
-import { PortfolioShowcase } from "@/components";
+import dynamic from "next/dynamic";
 import { fadeInUpAnimation } from "@/lib/constants";
 import { portfolioItems } from "@/lib/data";
 import * as motion from 'motion/react-client';
+
+// Dynamically import the showcase to avoid large image-heavy bundles on initial navigation.
+const PortfolioShowcase = dynamic(() => import("@/components/PortfolioShowcase"), {
+  loading: () => null,
+  ssr: false,
+});
 
 export default function PortfolioPage() {
     return (
