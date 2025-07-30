@@ -1,20 +1,24 @@
 import React from 'react'
-import {SmartLink} from '@/components/index'
 import { TSocialLink } from '@/types/types';
 
 type SocialLinkProps = {
-  link: TSocialLink 
-};
+    link: TSocialLink;
+    className?: string;
+}
 
-const SocialLink = ({link}: SocialLinkProps) => {
-  const { href, icon: Icon, name } = link;
+const SocialLink = ({link, className}: SocialLinkProps) => {
+  const IconComponent = link.icon as React.ComponentType<{ size?: number }>;
+  
   return (
-    <SmartLink className='w-full flex text-gray-500 py-4 font-normal text-[clamp(1rem, 2vw, 1rem)] justify-between' href={href} target='_blank' rel='noopener noreferrer'>
-      <div className='w-90 h-5 items-center flex space-x-2'>
-        {Icon && <Icon className='w-5 h-5' />}
-        <span className='label'>{name}</span>
-      </div>
-    </SmartLink>
+    <a 
+      href={link.href} 
+      target="_blank" 
+      rel="noopener noreferrer"
+      className={`${className} hover:opacity-70 transition-opacity duration-200`}
+      aria-label={`Visit ${link.name}`}
+    >
+      <IconComponent size={24} />
+    </a>
   )
 }
 

@@ -2,22 +2,29 @@ import type { Metadata } from "next";
 import Head from "next/head";
 import { Inter, Antonio } from "next/font/google";
 import { Footer, Header, PageContent, PageHeading, SectionBlock } from "@/components";
+import PerformanceMonitor from "@/components/PerformanceMonitor";
 import "./globals.css";
 
 
 const interSans = Inter({
   variable: "--font-inter-sans",
   subsets: ["latin"],
+  display: "swap",
+  preload: true,
 });
 
 const antonio = Antonio({
   variable: "--font-antonio",
   subsets: ["latin"],
+  display: "swap",
+  preload: true,
 });
 
 export const metadata: Metadata = {
   title: "Solaris Mundus",
   description: "Solar sales and marketing",
+  viewport: "width=device-width, initial-scale=1",
+  themeColor: "#ffffff",
 };
 
 export default function RootLayout({
@@ -33,8 +40,11 @@ export default function RootLayout({
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <link rel="manifest" href="/site.webmanifest"></link>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </Head>
       <body className={`${interSans.variable} ${antonio.variable} bg-white justify-center flex antialiased w-full h-full`}>
+        <PerformanceMonitor />
         <PageHeading />
         <main className="z-1 w-full max-w-[1480px] flex flex-col md:grid md:grid-cols-2 md:grid-rows-[auto,1fr,auto] md:h-screen md:gap-8 px-4 md:px-6">
           {/* Header */}
