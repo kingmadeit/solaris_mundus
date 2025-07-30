@@ -12,7 +12,7 @@ const PortfolioShowcase = ({className, items = portfolioItems}: PortfolioShowcas
   return (
     <section className={`w-full flex space-y-8 ${className}`}>
         {!items.length && <p className='text-2xl font-bold text-gray-700'>No portfolio items available.</p> }
-        {items && items.map(({id, image, title, link}) => (
+        {items && items.map(({id, image, title, link}, index) => (
           <ImageCard
             key={id}
             src={image}
@@ -20,6 +20,7 @@ const PortfolioShowcase = ({className, items = portfolioItems}: PortfolioShowcas
             text={title}
             link={link}
             className="w-full max-w-xl"
+            priority={index === 0} // Priority loading for first item
           />
           ))
         }

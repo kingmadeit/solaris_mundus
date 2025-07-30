@@ -12,6 +12,7 @@ import SmartLink from "./SmartLink";
 import PortfolioShowcase from "./PortfolioShowcase";
 import PageContent from "./PageContent";
 import Copyright from "./Copyright";
+import PerformanceMonitor from "./PerformanceMonitor";
 
 export {
   PageContent,
@@ -27,6 +28,7 @@ export {
   SectionTitle,
   SectionBody,
   SectionBlock,
-  Copyright
+  Copyright,
+  PerformanceMonitor
 };
 
