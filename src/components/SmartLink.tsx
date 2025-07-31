@@ -1,6 +1,12 @@
+'use client';
 import React from 'react'
 import Link from 'next/link';
-import { IconArrowRight } from '@tabler/icons-react';
+import dynamic from 'next/dynamic';
+
+// Dynamically load only the specific icon instead of the entire icon library.
+const IconArrowRight = dynamic(() => import('@tabler/icons-react').then(mod => mod.IconArrowRight), {
+    ssr: false,
+});
 import clsx from 'clsx';
 
 type SmartLinkProps = {

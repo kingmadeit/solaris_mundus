@@ -1,7 +1,15 @@
-import { PortfolioShowcase, SmartLink } from "@/components";
+'use client';
+import dynamic from "next/dynamic";
+import { SmartLink } from "@/components";
 import * as motion from 'motion/react-client';
 import { fadeInLeftAnimation } from "@/lib/constants";
 import { portfolioItems } from "@/lib/data";
+
+// Dynamically load the visually-heavy component only on the client.
+const PortfolioShowcase = dynamic(() => import("@/components/PortfolioShowcase"), {
+  loading: () => null,
+  ssr: false,
+});
 
 
 export default function Home() {
