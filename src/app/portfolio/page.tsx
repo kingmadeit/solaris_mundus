@@ -1,3 +1,4 @@
+'use client';
 import dynamic from "next/dynamic";
 import { fadeInUpAnimation } from "@/lib/constants";
 import { portfolioItems } from "@/lib/data";

@@ -1,3 +1,4 @@
+'use client';
 import dynamic from "next/dynamic";
 import { SmartLink } from "@/components";
 import * as motion from 'motion/react-client';
